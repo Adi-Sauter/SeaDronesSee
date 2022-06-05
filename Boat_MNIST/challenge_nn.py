@@ -1,7 +1,7 @@
 """
 TODO
-- team member 1: <name>
-- team member 2: <name>
+- team member 1: <Adrian Sauter>
+- team member 2: <Adem Atmaca>
 
 tasks:
     - add your team members' names at the top of the file
@@ -146,7 +146,7 @@ def main():
         ])
 
     # Create train and test set
-    path_to_dataset = "/PATH/TO/Boat-MNIST"   # TODO Set correct path
+    path_to_dataset = "/Users/adisauter/Documents/Studium/6. Semester/Einführung in Neuronale Netze/Übungen/assignment05/Boat-MNIST"   # TODO Set correct path
     train_set = Boats(root_dir=f'{path_to_dataset}/train', transform=transform,
                       gt_json_path=f'{path_to_dataset}/boat_mnist_labels_trainval.json')
     val_set = Boats(root_dir=f'{path_to_dataset}/val', transform=transform,
