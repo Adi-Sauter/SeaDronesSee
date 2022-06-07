@@ -54,7 +54,7 @@ class Boats(Dataset):
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(3 * 192 * 108, 1)
+        self.fc1 = nn.Linear(3 * 192 * 108, 1) # Input is a 192 * 108 image with rgb (3 values per pixel) colors
 
     def forward(self, x):
         x = torch.flatten(x, start_dim=1)
